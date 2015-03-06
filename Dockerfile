@@ -50,7 +50,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/
 
 # Clean up
   apt-get remove -y --purge openssh-client && apt-get autoremove -y && apt-get clean; \
-  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add config files
 ADD ./nginx-site.conf /etc/nginx/sites-enabled/default
