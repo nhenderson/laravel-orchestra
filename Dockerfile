@@ -7,7 +7,7 @@ ADD dbg_php_5_5.ini /etc/php5/mods-available/dbg_php_5_5.ini
 # Add PHP 5.5 debugger module
 ADD dbg-php-5.5.so /usr/lib/php5/20121212/dbg-php-5.5.so
 
-  echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list; \
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list; \
 
 # Install dependencies
   apt-get update && apt-get install -y \
